@@ -18,7 +18,7 @@ def key_gen():
 def print_key(func):
     def _print_key(num):
         for i in func(num):
-            print i 
+            print (i) 
     return _print_key
 
 def key_num(num,result=None):
@@ -26,7 +26,7 @@ def key_num(num,result=None):
         result = []
     for i in range(num):
         result.append(key_gen())
-    print result
+    print (result)
 
 if __name__ == "__main__":
     key_num(KEY_ALL)
